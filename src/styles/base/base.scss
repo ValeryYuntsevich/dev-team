@@ -1,0 +1,63 @@
+@import "../helpers/global_variables.scss";
+
+*, *::before,*::after { box-sizing: border-box; }
+
+body { 
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: calc(0.5em + 1vw);
+}
+
+.container {
+  padding: 0 1em;
+  height: 100vh;
+  background: $main-bg;
+}
+
+main {
+  background: $white-color;
+  padding: 0.7em 2em;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+    
+  li { display: inline-block; }
+    
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.icon {
+  width: 100%;
+  height: 1.1em;
+}
+
+h5, h3, h6, p {
+  margin: 0;
+}
+
+.lg {
+  text-transform: $uppercase;
+}
+
+.banner {
+  height: 40vh;
+  background-image: url("https://picsum.photos/200");
+}
+
+.sticky {
+  position: relative;
+  top: calc(100% - 65%);
+  height: 100px;
+  width: 100px;
+  background-image: url("https://picsum.photos/id/237/200/300");
+  background-size: cover;
+}
